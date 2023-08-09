@@ -1,6 +1,6 @@
 import streamlit as st  # pip install streamlit
 import pandas as pd  # pip install pandas
-import plotly.express as px  # pip install plotly-express
+# import plotly.express as px  # pip install plotly-express
 import base64  # Standard Python Module
 from io import StringIO, BytesIO  # Standard Python Module
 
@@ -19,11 +19,11 @@ if uploaded_file:
     length = len(uploaded_file.name)
 
     # -- PLOT DATAFRAME
-    fig = px.line(
-        df,
-        x= 'Date & Time',
-        y= 'ECG_Data',
-    )
+    # fig = px.line(
+    #     df,
+    #     x= 'Date & Time',
+    #     y= 'ECG_Data',
+    # )
 
     st.markdown('---')
     st.subheader('Patient Details : ')
